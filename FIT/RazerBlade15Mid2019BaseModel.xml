@@ -71,27 +71,27 @@
         </FlashComponents>
         <HostCpuBiosMasterAccess label="Host CPU / BIOS Master Access">
             <HostCpuWriteAccessIntelRecommended value="0xFFFF" value_list="0xFFFF,,0x011A,,0x000A,,0x010A,,0x001A,,Custom" label="Host CPU / BIOS Write Access Intel Recommended" help_text="This setting determines write access control for the Host CPU / BIOS. For further details on Region Access Control see the Cannon / Coffee Lake SPI Programming Guide." />
-            <HostCpuWriteAccessCustom value="0x0" label="Host CPU / BIOS Write Access Custom" help_text="This setting determines write access control for the Host CPU / BIOS.  For further details on Region Access Control see the SPI and SMIP Programming Guide" />
+            <HostCpuWriteAccessCustom value="0x0000" label="Host CPU / BIOS Write Access Custom" help_text="This setting determines write access control for the Host CPU / BIOS.  For further details on Region Access Control see the SPI and SMIP Programming Guide" />
             <HostCpuReadAccessIntelRecommended value="0xFFFF" value_list="0xFFFF,,0x000F,,0x010F,,0x001F,,0x011F,,Custom" label="Host CPU / BIOS Read Access Intel Recommended" help_text="This setting determines read access control for the Host CPU / BIOS. For further details on Region Access Control see the Cannon / Coffee Lake SPI Programming Guide." />
-            <HostCpuReadAccessCustom value="0x0" label="Host CPU / BIOS Read Access Custom" help_text="This setting determines read access control for the Host CPU / BIOS.  For further details on Region Access Control see the SPI and SMIP Programming Guide" />
+            <HostCpuReadAccessCustom value="0x0000" label="Host CPU / BIOS Read Access Custom" help_text="This setting determines read access control for the Host CPU / BIOS.  For further details on Region Access Control see the SPI and SMIP Programming Guide" />
         </HostCpuBiosMasterAccess>
         <IntelMeMasterAccess label="Intel(R) ME Master Access">
             <MeWriteAccessIntelRecommended value="0xFFFF" value_list="0xFFFF,,0x0004,,Custom" label="Intel(R) ME Write Access Intel Recommended" help_text="This setting determines write access control for the ME region. For further details on Region Access Control see Cannon / Coffee Lake SPI Programming guide further details." />
-            <MeWriteAccessCustom value="0x0" label="Intel(R) ME Write Access Custom" help_text="This setting determines read access control for the ME region.  For further details on Region Access Control see Canonlake H / LP SPI Programming guide further details." />
+            <MeWriteAccessCustom value="0x0000" label="Intel(R) ME Write Access Custom" help_text="This setting determines read access control for the ME region.  For further details on Region Access Control see Canonlake H / LP SPI Programming guide further details." />
             <MeReadAccessIntelRecommended value="0xFFFF" value_list="0xFFFF,,0x000D,,Custom" label="Intel(R) ME Read Access Intel Recommended" help_text="This setting determines read access control for the ME region. For further details on Region Access Control see Cannon / Coffee Lake SPI Programming guide further details." />
-            <MeReadAccessCustom value="0x0" label="Intel(R) ME Read Access Custom" help_text="This setting determines read access control for the ME region.  For further details on Region Access Control see Canonlake H / LP SPI Programming guide further details." />
+            <MeReadAccessCustom value="0x0000" label="Intel(R) ME Read Access Custom" help_text="This setting determines read access control for the ME region.  For further details on Region Access Control see Canonlake H / LP SPI Programming guide further details." />
         </IntelMeMasterAccess>
         <GbeMasterAccess label="GbE Master Access">
             <GbeWriteAccessIntelRecommended value="0xFFFF" value_list="0xFFFF,,0x0008,,Custom" label="GbE Write Access Intel Recommended" help_text="This setting determines write access control for the GBE region. For further details on Region Access Control see Cannon / Coffee Lake SPI Programming guide further details." />
-            <GbeWriteAccessCustom value="0x0" label="GbE Write Access Custom" help_text="This setting determines read access control for the GBE region.  For further details on Region Access Control see Canonlake H / LP SPI Programming guide further details." />
+            <GbeWriteAccessCustom value="0x0000" label="GbE Write Access Custom" help_text="This setting determines read access control for the GBE region.  For further details on Region Access Control see Canonlake H / LP SPI Programming guide further details." />
             <GbeReadAccessIntelRecommended value="0xFFFF" value_list="0xFFFF,,0x0009,,Custom" label="GbE Read Access Intel Recommended" help_text="This setting determines read access control for the GBE region. For further details on Region Access Control see Cannon / Coffee Lake SPI Programming guide further details." />
-            <GbeReadAccessCustom value="0x0" label="GbE Read Access Custom" help_text="This setting determines read access control for the GBE region.  For further details on Region Access Control see Canonlake H / LP SPI Programming guide further details." />
+            <GbeReadAccessCustom value="0x0000" label="GbE Read Access Custom" help_text="This setting determines read access control for the GBE region.  For further details on Region Access Control see Canonlake H / LP SPI Programming guide further details." />
         </GbeMasterAccess>
         <EcMasterAccess label="EC Master Access">
             <EcReadAccessIntelRecommended value="0xFFFF" value_list="0xFFFF,,0x0101,,0x0103,,Custom" label="Embedded Controller Read Access Intel Recommended" help_text="This setting determines read access control for the Embedded Controller region. For further details on Region Access Control see Cannon / Coffee Lake SPI Programming guide further details." />
-            <EcReadAccessCustom value="0x0" label="Embedded Controller Read Access Custom" help_text="This setting determines read access control for the Embedded Controller region.  For further details on Region Access Control see Canonlake H / LP SPI Programming guide further details." />
+            <EcReadAccessCustom value="0x0000" label="Embedded Controller Read Access Custom" help_text="This setting determines read access control for the Embedded Controller region.  For further details on Region Access Control see Canonlake H / LP SPI Programming guide further details." />
             <EcWriteAccessIntelRecommended value="0xFFFF" value_list="0xFFFF,,0x0100,,Custom" label="Embedded Controller Write Access Intel Recommended" help_text="This setting determines write access control for the Embedded Controller region. For further details on Region Access Control see Cannon / Coffee Lake SPI Programming guide further details." />
-            <EcWriteAccessCustom value="0x0" label="Embedded Controller Write Access Custom" help_text="This setting determines write access control for the Embedded Controller region.  For further details on Region Access Control see Canonlake H / LP SPI Programming guide further details." />
+            <EcWriteAccessCustom value="0x0000" label="Embedded Controller Write Access Custom" help_text="This setting determines write access control for the Embedded Controller region.  For further details on Region Access Control see Canonlake H / LP SPI Programming guide further details." />
         </EcMasterAccess>
         <FlashConfiguration label="Flash Configuration">
             <SpiDualIoReadEnable value="Yes" value_list="No,,Yes" label="Dual I/O Read Enable" help_text="This soft-strap only has effect if Dual I/O Read is discovered as supported via the SFDP." />
@@ -185,7 +185,7 @@
             <PrtcBackupPower value="Exists" value_list="None,,Exists" label="Persistent PRTC Backup Power" help_text="FPF that indicates if the device is designed such that it may lose PRTC power more than 10 times throughout the normal lifecycle of the product and hence has no persistent time or AR protection. At EOM, this value is burned to an FPF, and can never be changed." />
         </IntelMeBootConfiguration>
         <Reserved>
-            <Reserved value="Yes" value_list="No,,Yes" />
+            <Reserved value="No" value_list="No,,Yes" />
         </Reserved>
     </IntelMeKernel>
     <IntelAmt label="Intel(R) AMT">
